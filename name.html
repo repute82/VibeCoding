@@ -3,38 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>안녕하세요</title>
+  <title>Jang Won Bae</title>
   <style>
     html, body {
       margin: 0;
       height: 100%;
     }
+    /* 내용을 세로로 쌓고 화면 한가운데에 놓습니다 */
     body {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 2rem;
+      padding: 0 16px;
       background: #ffffff;
       color: #222222;
       font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      text-align: center;
     }
+    /* 이름이 길어서 hello.html보다 조금 작게, 화면 너비에 맞춰 조절합니다 */
     h1 {
       margin: 0;
-      font-size: clamp(3rem, 15vw, 12rem);
+      font-size: clamp(2.5rem, 10vw, 9rem);
       font-weight: 700;
     }
-    /* 링크의 기본 파란색·밑줄을 없애고 글자색을 그대로 씁니다 */
-    h1 a {
-      color: inherit;
+    .back {
+      color: #666666;
+      font-size: 1.25rem;
       text-decoration: none;
     }
-    /* 마우스를 올리면 밑줄로 누를 수 있다는 것을 알려 줍니다 */
-    h1 a:hover {
+    .back:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- 누르면 이름 페이지(name.html)로 이동합니다 -->
-  <h1><a href="name.html">안녕하세요</a></h1>
+  <h1>Jang Won Bae</h1>
+  <!-- 처음 페이지로 돌아가는 링크 -->
+  <a class="back" href="hello.html">← 돌아가기</a>
 </body>
 </html>
